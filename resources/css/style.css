@@ -51,8 +51,12 @@ nav img, footer img {
   align-items: center;
 }
 
-ul {
+.menularge {
   margin-right: 1rem;
+}
+
+.menusmall {
+  display: none;
 }
 
 ul li {
@@ -130,3 +134,76 @@ footer .logo {
 }
 
 /* END DESKTOP VERSION */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  nav {
+    position: static;
+  }
+  header {
+    height: 22rem;
+  }
+  .whitebox {
+    margin: 5rem 2rem 0 0;
+    padding: 0.75rem 4rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .menularge {
+    display: none;
+  }
+  .menusmall {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    height: 17rem;
+    background-position: left;
+  }
+  header .flex {
+    justify-content: center;
+  }
+  .whitebox {
+    margin: 8.5rem 0 0 0;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .logo span {
+    display: none;
+  }
+  footer .logo {
+    justify-content: center;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 100%;
+    height: 2rem;
+    margin: 3.77rem 0;
+  }
+  .infocontainer {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  #getmargin {
+    margin-left: 0;
+  }
+  p {
+    font-size: 0.77rem;
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+}
